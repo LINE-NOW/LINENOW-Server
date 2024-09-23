@@ -106,4 +106,4 @@ jobs:
         password: ${{ secrets.SSH_PASSWORD }}
         port: ${{ secrets.SSH_PORT }}
         script: |
-          docker exec -it linenow-was python manage.py collectstatic --noinput
+          docker exec linenow-was python manage.py collectstatic --noinput
