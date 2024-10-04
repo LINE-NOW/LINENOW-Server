@@ -43,10 +43,10 @@ jobs:
         echo "KAKAO_CALLBACK_URI=${{ secrets.KAKAO_CALLBACK_URI }}" >> .env
         echo "BACK_BASE_URL=${{ secrets.BACK_BASE_URL }}" >> .env
         echo "KAKAO_SECRET=${{ secrets.KAKAO_SECRET }}" >> .env
-        echo "SMS_TOKEN_KEY${{ secrets.SMS_TOKEN_KEY }}" >> .env
-        echo "SMS_API_KEY${{ secrets.SMS_API_KEY }}" >> .env
-        echo "SEND_PHONE${{ secrets.SEND_PHONE }}" >> .env
-        echo "SSODAA_BASE_URL${{ secrets.SSODAA_BASE_URL }}" >> .env
+        echo "SMS_TOKEN_KEY=${{ secrets.SMS_TOKEN_KEY }}" >> .env
+        echo "SMS_API_KEY=${{ secrets.SMS_API_KEY }}" >> .env
+        echo "SEND_PHONE=${{ secrets.SEND_PHONE }}" >> .env
+        echo "SSODAA_BASE_URL=${{ secrets.SSODAA_BASE_URL }}" >> .env
         cat .env
 
     - name: Set up Python 3.12
